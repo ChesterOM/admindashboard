@@ -5,6 +5,19 @@ body{
     padding: 0;
 }
 
+input{
+    background-color: #bae5fddd;
+    border: none;
+    border-radius: 25px;
+    width: 40vw;
+    height: 25px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
 .container {
     display: grid;
     height: 100vh;
@@ -12,11 +25,88 @@ body{
     grid-template-rows: 1fr 5fr;
 }
 
+h3 {
+    font-weight: bolder;
+    color: #07283f;
+    text-shadow: 2px 2px 10px #07283f6d;
+    margin-left: 25px;
+}
+
+h2 {
+    color: #07283f;
+    margin-top: -15px;  
+}
+
+p {
+    color: #07283f;
+}
+
+button {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #326be7;
+    color: #e0f2fe;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 87px;
+    margin: 10px;
+}
+
 .header {
-    display: grid;
-    grid-row: 1 / 1;
-    grid-column: 2 / 2;
-    background-color: #0ea5e9;
+    display: flex;
+    flex-direction: column;
+    background-color: #38bff8e3;
+    min-height: 162px;
+}
+
+.head-left {
+    display: flex;
+    margin-left: 2.5vw;
+
+}
+
+.header-icon{
+    color: #082f49;
+}
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5vw;
+}
+
+.profilepic {
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.bhead-left .profilepic{
+    width: 75px;
+    height: 75px;  
+    margin-left: 4vw;
+    margin-right: 2vw;
+
+}
+
+.bhead-left {
+    display: flex;
+}
+
+.bhead-right {
+   display: flex;
+   align-items: center;
+   margin-right: 3vw;
+}
+
+.profilepic img {
+    width: 100%;
 }
 
 .sidebar {
@@ -41,8 +131,27 @@ body{
 }
 
 
-#dashboard{
+
+#dashboard {
     font-size: 38px;
+}
+
+#notification, #search {
+    font-size: 38px;
+    vertical-align: bottom;
+}
+
+#line-one{
+    display: flex;
+    height: 50%;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+#line-two{
+    display: flex;
+    height: 50%; 
+    justify-content: space-between;
 }
 
 
