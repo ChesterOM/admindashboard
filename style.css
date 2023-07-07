@@ -21,7 +21,7 @@ input{
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -97,6 +97,7 @@ button {
 
 .bhead-left {
     display: flex;
+    align-items: center;
 }
 
 .bhead-right {
@@ -116,21 +117,126 @@ button {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr repeat(10, 1fr);
-    justify-items: start;
-    align-items: center;
     grid-row: 1 / last;
     grid-column: 1 / 1;
     background-color: #082f49;
-    padding: 0px 5vw 40vh 5vw;
+    padding: 0px 25px 40vh 25px;
+}
+
+.sidebar .icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sidebar .sidebaropt {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
     grid-row: 2 / 2;
     grid-column: 2 / 2;
     background-color: #e0f2fe;
+    padding: 0px 50px 50px 50px;
+    box-shadow: 0px 6px 5px -4px #07283f6d inset;
 }
 
+.projects {
+    display: grid;
+    grid-row: 1 / span2;
+    grid-column: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    gap: 35px;
+    grid-auto-flow: column;
+}
 
+.content-header {
+    grid-column: 1 / span2;
+    margin-left: 20px;
+    color: #07283fd0;
+    display: flex;
+    align-items: end;
+    margin-bottom: -30px;
+}
+
+.content-bubble {
+    background-color: white;
+    border-radius: 7.5px;
+    border-left: orange solid 10px;
+}
+
+.content-bubble p{
+    color: gray;
+    margin: 5px 25px 0px 25px;
+}
+
+.content-bubble h3{
+    text-shadow: none;
+    margin: 40px 0px 0px 25px;
+}
+
+.content-icons {
+    color: #07283fd4;
+    display: flex;
+    justify-content: end;
+    margin-top: 55px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.content-bubble i {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr 6fr;
+    margin-top: 52px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    color: #07283fd4;
+    gap: 15px;
+}
+
+.content-announcements {
+    margin-bottom: -10px;
+}
+
+.announcement-bubble, .trending-bubble {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.announcement-bubble {
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+
+.opt{
+    border-bottom: #07283fcb solid 1px;
+}
+
+.opt p, .opt2 p {
+    margin-top: -3px;
+    padding: 5px;
+    color: gray;
+}
+
+.announcement-bubble h3{
+    text-shadow: none;
+    margin: 0px;
+    padding: 5px;
+}
 
 #dashboard {
     font-size: 38px;
@@ -139,6 +245,7 @@ button {
 #notification, #search {
     font-size: 38px;
     vertical-align: bottom;
+    margin-right: 1.5vw;
 }
 
 #line-one{
